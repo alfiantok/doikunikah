@@ -10,6 +10,18 @@ document.getElementById("openBtn").onclick = () => {
   reveal();
 };
 
+// Ambil parameter nama tamu dari URL
+const urlParams = new URLSearchParams(window.location.search);
+const guest = urlParams.get("to");
+
+// Jika ada nama tamu
+if (guest) {
+  // Decode spasi & karakter
+  const decodedName = decodeURIComponent(guest);
+  document.getElementById("guestName").innerText = decodedName;
+}
+
+
 // COUNTDOWN (SAMPAI DETIK)
 const target = new Date("2026-01-25T09:00:00").getTime();
 setInterval(() => {

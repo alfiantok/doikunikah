@@ -1,24 +1,18 @@
 :root {
-  --primary: #b2955a;
+  --primary: #b59b5c;
   --soft: #f7f4ef;
-  --dark: #2c2c2c;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #fff;
-  color: var(--dark);
+  background: #eee;
 }
 
-/* MAX WIDTH */
 .container {
   max-width: 800px;
   margin: auto;
+  background: #fff;
 }
 
 .hidden {
@@ -30,35 +24,29 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
-.cover-overlay {
+.overlay {
   background: rgba(0,0,0,.55);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: #fff;
-  padding: 20px;
+  text-align: center;
 }
 
-.cover h1 {
+.overlay h1 {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
-  margin-bottom: 10px;
 }
 
-.cover button {
+.overlay button {
   margin-top: 25px;
   padding: 12px 30px;
   border-radius: 30px;
   border: none;
-  background: #fff;
-  color: #333;
-  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -66,40 +54,63 @@ body {
 .section {
   padding: 60px 25px;
   text-align: center;
-  background: #fff;
 }
 
-.section h2,
-.section h3 {
+.section h2, .section h3 {
   font-family: 'Playfair Display', serif;
+}
+
+/* PHOTO */
+.photo {
+  width: 200px;
+  border-radius: 50%;
   margin-bottom: 15px;
 }
 
-/* ORNAMENT SECTION */
+/* ORNAMENT */
 .ornament {
   background:
-    linear-gradient(180deg, rgba(247,244,239,0.95), rgba(247,244,239,0.95)),
+    linear-gradient(rgba(247,244,239,.95), rgba(247,244,239,.95)),
     url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 }
 
-/* GALLERY */
-.gallery {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
+/* DOA */
+.arabic {
+  font-size: 1.4rem;
+  font-family: serif;
 }
 
-.gallery img {
-  width: 48%;
-  border-radius: 14px;
+.arti {
+  font-size: .95rem;
+  margin-top: 10px;
+}
+
+/* COUNTDOWN */
+.countdown {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--primary);
 }
 
 /* FOOTER */
 footer {
   background: var(--soft);
-  padding: 30px 20px;
-  text-align: center;
+  padding: 30px;
 }
 
 /* FADE IN UP */
-.fade
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade.show {
+  animation: fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

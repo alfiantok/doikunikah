@@ -1,0 +1,105 @@
+:root {
+  --primary: #b2955a;
+  --soft: #f7f4ef;
+  --dark: #2c2c2c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: var(--dark);
+}
+
+/* MAX WIDTH */
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+/* COVER */
+.cover {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cover-overlay {
+  background: rgba(0,0,0,.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.cover h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.cover button {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 25px;
+  text-align: center;
+  background: #fff;
+}
+
+.section h2,
+.section h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+/* ORNAMENT SECTION */
+.ornament {
+  background:
+    linear-gradient(180deg, rgba(247,244,239,0.95), rgba(247,244,239,0.95)),
+    url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 48%;
+  border-radius: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--soft);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* FADE IN UP */
+.fade

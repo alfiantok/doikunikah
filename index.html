@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Undangan Pernikahan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Backsound -->
+<audio id="bgMusic" loop>
+  <source src="menikah.mp3" type="audio/mpeg">
+</audio>
+
+<!-- COVER -->
+<section class="cover" style="background-image:url('image.jpg')">
+  <div class="cover-overlay">
+    <h1>Tasya & Jaemin</h1>
+    <p>Wedding Invitation</p>
+    <button id="openBtn">Buka Undangan</button>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div id="content" class="container hidden">
+
+  <!-- SECTION 1 -->
+  <section class="section fade">
+    <h2>We Are Getting Married</h2>
+    <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami.</p>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="section ornament fade">
+    <h3>Detail Acara</h3>
+    <p>📅 25 Januari 2026</p>
+    <p>⏰ 09.00 WIB</p>
+    <p>📍 Yogyakarta</p>
+    <div id="countdown"></div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="section fade">
+    <h3>Galeri</h3>
+    <div class="gallery">
+      <img src="image.jpg" alt="Foto Tasya & Jaemin">
+      <img src="image2.jpg" alt="Acara">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="fade">
+    <p>Terima kasih atas doa dan restunya 🤍</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

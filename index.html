@@ -5,21 +5,21 @@
   <title>Undangan Pernikahan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Backsound -->
+<!-- MUSIC -->
 <audio id="bgMusic" loop>
-  <source src="menikah.mp3" type="audio/mpeg">
+  <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_6bfe0c7e67.mp3" type="audio/mpeg">
 </audio>
 
 <!-- COVER -->
 <section class="cover" style="background-image:url('image.jpg')">
-  <div class="cover-overlay">
+  <div class="overlay">
     <h1>Tasya & Jaemin</h1>
     <p>Wedding Invitation</p>
     <button id="openBtn">Buka Undangan</button>
@@ -29,33 +29,71 @@
 <!-- CONTENT -->
 <div id="content" class="container hidden">
 
-  <!-- SECTION 1 -->
+  <!-- UNDANGAN -->
   <section class="section fade">
-    <h2>We Are Getting Married</h2>
-    <p>Dengan penuh rasa syukur, kami mengundang Bapak/Ibu/Saudara/i untuk hadir di hari bahagia kami.</p>
+    <h2>Undangan Pernikahan</h2>
+    <p>Dengan memohon rahmat dan ridho Allah SWT, kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada acara pernikahan kami.</p>
+    <p class="date">📅 Minggu, 25 Januari 2026</p>
   </section>
 
-  <!-- SECTION 2 -->
+  <!-- MEMPELAI WANITA -->
+  <section class="section fade">
+    <img src="image.jpg" class="photo">
+    <h3>Tasya</h3>
+    <p>Putri dari Bapak ... & Ibu ...</p>
+  </section>
+
+  <!-- MEMPELAI PRIA -->
+  <section class="section fade">
+    <img src="image2.jpg" class="photo">
+    <h3>Jaemin</h3>
+    <p>Putra dari Bapak ... & Ibu ...</p>
+  </section>
+
+  <!-- DOA -->
   <section class="section ornament fade">
-    <h3>Detail Acara</h3>
-    <p>📅 25 Januari 2026</p>
-    <p>⏰ 09.00 WIB</p>
-    <p>📍 Yogyakarta</p>
-    <div id="countdown"></div>
+    <h3>Doa Pernikahan</h3>
+    <p class="arabic">
+      وَأَنْكِحُوا الْأَيَامَىٰ مِنْكُمْ وَالصَّالِحِينَ مِنْ عِبَادِكُمْ وَإِمَائِكُمْ
+    </p>
+    <p class="arti">
+      “Nikahkanlah orang-orang yang masih membujang di antara kamu…”  
+      <br><strong>(QS. An-Nisa: 25)</strong>
+    </p>
   </section>
 
-  <!-- SECTION 3 -->
+  <!-- CERITA -->
   <section class="section fade">
-    <h3>Galeri</h3>
-    <div class="gallery">
-      <img src="image.jpg" alt="Foto Tasya & Jaemin">
-      <img src="image2.jpg" alt="Acara">
-    </div>
+    <h3>Cerita Kami</h3>
+    <p>
+      Berawal dari sebuah pertemuan sederhana, kami saling mengenal,
+      berbagi cerita, tumbuh bersama, hingga akhirnya Allah SWT
+      mempersatukan kami dalam ikatan suci pernikahan.
+    </p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section ornament fade">
+    <h3>Save The Date</h3>
+    <div id="countdown" class="countdown"></div>
+  </section>
+
+  <!-- MAPS -->
+  <section class="section fade">
+    <h3>Lokasi Acara</h3>
+    <iframe
+      src="https://www.google.com/maps?q=Yogyakarta&output=embed"
+      width="100%"
+      height="300"
+      style="border:0; border-radius:12px;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
   </section>
 
   <!-- FOOTER -->
   <footer class="fade">
-    <p>Terima kasih atas doa dan restunya 🤍</p>
+    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami 🤍</p>
   </footer>
 
 </div>
